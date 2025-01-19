@@ -1,5 +1,5 @@
 {
-  "name": "gullible-giant",
+  "name": "",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.7"
+    "@astrojs/image": "^0.18.0",
+    "@astrojs/tailwind": "^5.1.4",
+    "astro": "^5.1.7",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17"
   }
 }

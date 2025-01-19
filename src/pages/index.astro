@@ -1,16 +1,67 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="MemeToken - The Next Big Thing in Crypto">
+	<main class="container mx-auto px-6">
+		<!-- Header -->
+		<header class="py-8">
+			<nav class="flex justify-between items-center">
+				<div class="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">MemeToken</div>
+				<div class="space-x-8">
+					<a href="#contract" class="text-lg hover:text-purple-400 transition-colors">Contract</a>
+					<a href="#info" class="text-lg hover:text-purple-400 transition-colors">Info</a>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Hero Section -->
+		<section class="py-32 text-center">
+			<div class="max-w-4xl mx-auto">
+				<div class="mb-12">
+					<!-- Enhanced logo -->
+					<div class="w-64 h-64 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full mx-auto mb-12 float-animation shadow-lg shadow-purple-500/50"></div>
+				</div>
+				<h1 class="text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">MemeToken</h1>
+				<p class="text-2xl mb-12 text-gray-300">The most revolutionary meme coin that's taking the crypto world by storm! 🚀</p>
+				<div class="space-y-6">
+					<button class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-12 rounded-full text-xl transition-all transform hover:scale-105 shadow-lg shadow-purple-500/50">
+						Buy Now
+					</button>
+					<div class="flex justify-center items-center space-x-3">
+						<code class="bg-gray-800 p-3 rounded-lg text-lg border border-purple-500/30">0x1234...5678</code>
+						<button class="p-3 hover:text-purple-400 transition-colors text-xl">
+							📋
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Info Section -->
+		<section id="info" class="py-32">
+			<div class="max-w-5xl mx-auto">
+				<h2 class="text-5xl font-bold mb-16 text-center bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">Why MemeToken?</h2>
+				<div class="grid md:grid-cols-2 gap-12">
+					<div class="bg-gray-800/50 p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all transform hover:scale-105">
+						<h3 class="text-3xl font-bold mb-6 text-purple-400">Community Driven</h3>
+						<p class="text-lg text-gray-300">Built by the community, for the community. No pre-mine, no VCs, just pure meme energy!</p>
+					</div>
+					<div class="bg-gray-800/50 p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all transform hover:scale-105">
+						<h3 class="text-3xl font-bold mb-6 text-purple-400">Moon Potential</h3>
+						<p class="text-lg text-gray-300">With our revolutionary tokenomics and strong community, we're aimed straight for the moon! 🌕</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="py-16 text-center">
+			<div class="space-x-8 mb-8">
+				<a href="#" class="text-lg hover:text-purple-400 transition-colors">Twitter</a>
+				<a href="#" class="text-lg hover:text-purple-400 transition-colors">Telegram</a>
+			</div>
+			<p class="text-sm text-gray-400">Not affiliated with any persons, living or dead, that may resemble our meme</p>
+		</footer>
+	</main>
+</Layout>
